@@ -106,6 +106,7 @@ func Provider() terraform.ResourceProvider {
 			"postgresql_grant":              resourcePostgreSQLGrant(),
 			"postgresql_schema":             resourcePostgreSQLSchema(),
 			"postgresql_role":               resourcePostgreSQLRole(),
+			"postgresql_table":              resourcePostgreSQLTable(),
 		},
 
 		ConfigureFunc: providerConfigure,
